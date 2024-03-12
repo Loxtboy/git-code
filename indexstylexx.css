@@ -1,0 +1,431 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #F3F3F3;
+	overflow-x: hidden;
+}
+
+/*HEADER*/
+
+header{
+	background-color: #0766AD;
+	height: 90px;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo{
+	display: flex;
+	margin: 20px 20px;
+}
+
+header .header-logo img{
+	width: 70px;
+	height: 60px;
+}
+
+header .header-logo h1{
+	font-size: 3rem;
+	color: black;
+	font-family:Lucida Bright;
+	font-style: italic;
+}
+
+nav{
+	font-family: "Work Sans", Arial, Helvetica, sans-serif;
+	font-size: 17.5px;
+	font-weight: 700;
+	margin: 0 20px;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover{
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+
+.dropdown{
+	color: black;
+}
+
+.dropdown:hover{
+	color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+
+.dropdown .dropdown-toggle{
+	color: black;
+}
+
+/*MAIN*/
+
+main .join-container .join-item{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	position: relative;
+}
+
+main .join-container .join-item::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.900),transparent);
+}
+
+main .join-container .join-item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+main .join-item .join-content{
+	position: absolute;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+main .join-content .join-title{
+	font-size: 6rem;
+}
+
+main .join-content .join-description{
+	width: 50ch;
+	line-height: 1.5;
+}
+
+main .join-content .join-action{
+	color: white;
+	border: 1px solid white;
+	padding: 0.6rem 1.5rem;
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	width: fit-content;
+	position: relative;
+	isolation: isolate;
+	transition: all 500ms;
+}
+
+main .join-content .join-action::before{
+	content: '';
+	background-color: white;
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	width: 0;
+	transition: all 500ms;
+}
+
+main .join-content .join-action:hover {
+	color: black;
+}
+
+main .join-content .join-action:hover::before {
+	width: 100%;
+}
+
+/*searchbox*/
+main .searchbox-container{
+	display:flex;
+	margin: 1.5rem 20rem;
+	
+}
+
+main .searchbox-container form{
+	background: #fff;
+	width: 800px;
+	height: 55px;
+	display: flex;
+	border: 1px solid black;
+}
+
+main .searchbox-container form input{
+	flex: 1;
+	border: none;
+	outline: none;
+}
+
+main .searchbox-container form button{
+	background: #0766AD;
+	padding: 10px 50px;
+	border: none;
+	outline: none;
+	color: #fff;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+main .searchbox-container form .ph-magnifying-glass{
+	padding: 10px 20px;
+	color: #777;
+	align-self: center;
+}
+
+
+ .databuku h1{
+	margin: 3rem 0;
+}
+
+ .databuku .table{
+	margin-top:2rem ;
+}
+
+ .databuku .table{
+	text-align: center;
+}
+
+ .databuku .table tbody tr td .bookimg{
+	height: 150px;
+	width: 120px;
+	position: relative;
+	transform: rotate(-80deg) skewX(10deg) scale(.8);
+	box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+	transition: .5s;
+}
+
+.databuku .table tbody tr td .bookimg:hover{
+	transform:rotate(0deg) skewX(-10deg) scale(.8) translate(15px, -15px);
+	box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+}
+
+ .databuku .table tbody tr td .booklink{
+	text-decoration: none;
+}
+
+ .databuku a{
+	text-decoration: none;
+}
+
+ .databuku .tambahdata{
+	border: 1px solid #0766AD;
+	box-shadow: 3px 3px #888888;
+	margin: 0 10px;
+	padding: 3px 3px;
+	color: whitesmoke;
+	background-color: #0766AD;
+	transition: all 500ms;
+}
+
+ .databuku .tambahdata:hover{
+	border: 1px solid #0766AD;
+	box-shadow: 1px 1px #888888;
+	margin: 0 10px;
+	padding: 1px 1px;
+	color: whitesmoke;
+	background-color: #0766AD;
+	transition: all 500ms;
+}
+
+
+ .databuku tbody tr td .action{
+	border: 1px solid #0766AD;
+	padding: 3px 3px;
+	background-color: #0766AD;
+	color: ghostwhite;
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.900);
+	transition: all	500ms;
+}
+
+ .databuku tbody tr td .action:hover{
+	border: 1px solid #0766AD;
+	padding: 3px 3px;
+	background-color: #0766AD;
+	color: ghostwhite;
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.800);
+	transition: all	500ms;
+}
+
+/*parallax*/
+
+h1{
+	font-size: 120px;
+	text-align: center;
+}
+
+.parallax{
+	height: 500px;
+	background: url('img/parallax.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.parallax-inner{
+	text-align: center;
+	align-items: center;
+	padding: 55px 0;
+}
+
+.parallax-inner img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 3px solid #0766AD;
+	margin: 20px 0;
+}
+
+.parallax-inner p{
+	width: 70ch;
+	margin: 0 23.5rem;
+	color: black;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.parallax-inner hr{
+	width: 250px;
+	margin: 20px 35rem;
+}
+
+/*Pembatas parallax dengan footer*/
+.pembatas{
+	border: none;
+	height: 3px;
+	background: linear-gradient(to left, blue, red);
+}
+
+/*FOOTER*/
+
+footer{
+	height: 470px;
+	background-color: white;
+}
+
+footer .tentang-kami{
+	height: 150px;
+}
+
+footer .tentang-kami h2{
+	font-family: "Work Sans", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	margin: 20px;
+}
+
+footer .tentang-kami hr{
+	width: 1200px;
+	margin-left: 1.5rem;
+}
+
+footer .tentang-kami .footer-logo{
+	display: flex;
+	margin-top: 45px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+
+footer .tentang-kami .footer-logo img{
+	display: flex;
+	width: 70px;
+	height: 60px;
+}
+
+footer .tentang-kami .footer-logo h1{
+	font-size: 3rem;
+	color: black;
+	font-family:Lucida Bright;
+	font-style: italic;
+}
+
+footer .tentang-kami .info ul{
+	list-style: none;
+}
+
+footer .tentang-kami .info ul li{
+	font-size: 25px;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	color: #666666;
+	padding: 5px 0;
+}
+
+.medsos a{
+	text-decoration: none;
+}
+
+.medsos ul{
+	list-style: none;
+	display: flex;
+}
+
+.medsos ul li{
+	padding: 0 7px;
+}
+
+.medsos i{
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 7px 7px;
+	color: white;
+}
+
+.medsos .ph-facebook-logo{
+	background-color: #3b5998;
+}
+
+.medsos .ph-twitter-logo{
+	background-color: #00acee;
+}
+
+.medsos .ph-youtube-logo{
+	background-color: #c4302b;
+}
+
+.medsos .ph-instagram-logo{
+	background-color: rgb(193, 53, 132);
+}
+
+.map{
+	display: flex;
+	gap: 1rem;
+	margin-left: 25rem;
+}
+
+.vl{
+	border-left: 1px solid grey;
+	height: 300px;
+}
+
+.map iframe{
+	width: 700px;
+	height: 280px;
+	margin: 20px;
+}
+
+.copyright{
+	background-color: #45474B;
+	height: 50px;
+	padding: 20px 20px;
+}
+
+.copyright p{
+	color: white;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+}
